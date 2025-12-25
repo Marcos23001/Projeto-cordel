@@ -5,17 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Cordel</title>
     <style>
+        /*Fonte Cabeçalho*/
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+        
+        /*Fonte Versos*/
+        @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+        :root{
+            --font1:"Passion One";
+            --font2:"Sriracha";
+        }
+
         *{
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
         }
 
         header{
+            width: 100vw;
             height: 90px;
             color: white;
             padding-top: 30px;
             text-align: center;
             background-color: #1e1d20;
+        }
+
+        header h2{
+            font-size: 2.5em;
+            font-family: var(--font1);
         }
 
         header a{
@@ -25,6 +47,32 @@
 
         header a:hover{
             border-bottom: 2px solid;
+        }
+
+        main{
+            margin: auto;
+            font-family: var(--font2);
+        }
+
+        main p{
+            width: 50vw;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+
+        .imagem p{
+            width: 55vw;
+            color: white;
+            background-color: #1e1d207b;
+        }
+
+        #img1{
+            height: 40vh;
+            width: 100vw;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-image: url("imagens/background001.jpg");
         }
     </style>
 </head>
@@ -44,11 +92,8 @@
                 Antes que eu caduque
                 Vou dizer tudo em poesia.
             </p>
-        </section>
-        
-        //---
-        
-        <section>
+        </section>     
+        <section class="imagem" id="img1">
             <p>
                 Não é mais como era antes
                 É tudo abreviado
@@ -59,9 +104,6 @@
                 E um coração desenhado.
             </p>
         </section>
-        
-        //---
-        
         <section>
             <p>
                 Arroba agora não pesa
@@ -82,9 +124,7 @@
                 Decifre esse rabisco.
             </p>
         </section>
-        
-        //---
-        <section>
+        <section class="imagem" id="img2">
             <p>
                 Tenho saudade das cartas
                 Escritas com a própria mão
@@ -94,10 +134,7 @@
                 Era texto de verdade
                 Nas linhas do coração.
             </p>
-        </section>
-        
-        //---
-        
+        </section>   
         <section>
             <p>
                 Agora, escrevo e envio
