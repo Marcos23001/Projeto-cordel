@@ -1,0 +1,89 @@
+/*Fonte Cabeçalho*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+        
+/*Fonte Versos*/
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1:"Passion One";
+    --font2:"Sriracha";
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    width: 100vw;
+    height: 90px;
+    color: white;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #1e1d20;
+}
+
+header h2{
+    font-size: 2.5em;
+    font-family: var(--font1);
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover{
+    border-bottom: 2px solid;
+}
+
+main{
+    margin: auto;
+    font-family: var(--font2);
+}
+
+main p{
+    width: 40vw;
+    padding: 15px;
+    font-size: 1.2em;
+}
+
+.imagem{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.imagem p{
+    padding: 10px;
+    width: 40vw;
+    color: white;
+    margin-left: 20px;
+    background-color: #1e1d207b;
+}
+
+#img1{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("imagens/background001.jpg");
+}
+
+#img2{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("imagens/background002.jpg");  
+}
+
+footer{
+    font-size: 1.1em;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #1e1d20;
+}
